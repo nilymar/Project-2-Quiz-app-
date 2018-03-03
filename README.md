@@ -1,4 +1,4 @@
-# Project-2-Quiz-app-
+# Project 3: Quiz app
 I decided to implement it using intents and multiple activities - where each type of question has a specific activity.
 I created a random array with 10 questions in toatal - 6 RadioGroup questions, 2 EditView and 2 Multi options questions.
 I added the ability to go back and forward in the questions using back and next buttons. your answer only count if you press submit, but using an array of objects that save the changes made by the user in each question (i.e. the answers he chose / wroth, did he submit etc.) you can rotate the screen or move between questions and your changes are saved.
