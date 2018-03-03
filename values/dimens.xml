@@ -1,0 +1,33 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="big_padding">20dp</dimen>
+    <dimen name="team_name_background_landscape">180dp</dimen>
+    <dimen name="team_name_background_portrait">155dp</dimen>
+    <dimen name="ring_thickness">40dp</dimen>
+    <dimen name="round_button_space">90dp</dimen>
+    <dimen name="inner_ring_thickness">33dp</dimen>
+    <dimen name="submit_ring_thickness">62dp</dimen>
+    <dimen name="submit_button_space">124dp</dimen>
+    <dimen name="submit_inner_ring_thickness">55dp</dimen>
+    <dimen name="submit_ring_thickness_landscape">56dp</dimen>
+    <dimen name="submit_button_space_landscape">118dp</dimen>
+    <dimen name="submit_inner_ring_thickness_landscape">49dp</dimen>
+    <dimen name="text_submit_landscape">28sp</dimen>
+    <dimen name="text_big_landscape">20sp</dimen>
+    <dimen name="standard_margin">8dp</dimen>
+    <dimen name="very_small_margin">2dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="text_multi_portrait">16sp</dimen>
+    <dimen name="text_multi_landscape">18sp</dimen>
+    <dimen name="round_margin_landscape">10dp</dimen>
+    <dimen name="text_round_button">25sp</dimen>
+    <dimen name="text_submit_portrait">30sp</dimen>
+    <dimen name="round_margin_portrait">12dp</dimen>
+    <dimen name="text_answer_portrait">18sp</dimen>
+    <dimen name="score_big_frame">36dp</dimen>
+    <dimen name="exit_button_margin">20dp</dimen>
+    <dimen name="start_button_padding">40dp</dimen>
+    <dimen name="text_start_portrait">50sp</dimen>
+    <dimen name="start_button_margin">30dp</dimen>
+    <dimen name="text_start_landscape">45sp</dimen>
+</resources>

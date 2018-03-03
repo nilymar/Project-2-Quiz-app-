@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topography">
+
+    <LinearLayout
+        style="@style/linear_layout_top"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/edit_text_question_text"
+            style="@style/question_landscape" />
+
+        <EditText
+            android:id="@+id/edit_text_user_input"
+            style="@style/edit_text_landscape"
+            android:hint="@string/write_here" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_padding">
+
+            <Button
+                android:id="@+id/back_button_edit_text"
+                style="@style/back_button_landscape"
+                android:text="@string/back_button" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/back_button_edit_text"
+                android:layout_toLeftOf="@id/next_button_edit_text"
+                android:layout_toRightOf="@id/back_button_edit_text"
+                android:layout_toStartOf="@id/next_button_edit_text"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/submit_button_edit_text"
+                    style="@style/submit_button_landscape"
+                    android:text="@string/submit_button" />
+
+                <TextView
+                    android:id="@+id/answer_text_edit_text"
+                    style="@style/answer_landscape" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_button_edit_text"
+                style="@style/next_button_landscape"
+                android:text="@string/next_button" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

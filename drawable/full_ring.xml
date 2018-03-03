@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<item>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="ring"
+android:innerRadius="0dp"
+android:thickness="@dimen/ring_thickness"
+
+android:useLevel="false">
+<solid android:color="@color/buttonPink"/>
+<size android:height="@dimen/round_button_space"
+    android:width="@dimen/round_button_space"
+    />
+</shape>
+</item>
+<item>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="ring"
+android:innerRadius="0dp"
+android:thickness="@dimen/inner_ring_thickness"
+    android:tint="@color/colorBackground"
+android:useLevel="false">
+<size android:height="@dimen/round_button_space"
+    android:width="@dimen/round_button_space"
+    />
+</shape>
+</item>
+</layer-list>

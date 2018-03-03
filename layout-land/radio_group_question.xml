@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topography">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/question_layout"
+        style="@style/linear_layout_top">
+
+        <TextView
+            android:id="@+id/radio_group_question_text"
+            style="@style/question_landscape" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_options"
+            style="@style/radio_group_landscape">
+
+            <RadioButton
+                android:id="@+id/rd_op1"
+                style="@style/radio_button_landscape" />
+
+            <RadioButton
+                android:id="@+id/rd_op2"
+                style="@style/radio_button_landscape" />
+
+            <RadioButton
+                android:id="@+id/rd_op3"
+                style="@style/radio_button_landscape" />
+
+            <RadioButton
+                android:id="@+id/rd_op4"
+                style="@style/radio_button_landscape" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin">
+
+            <Button
+                android:id="@+id/back_button"
+                style="@style/back_button_landscape"
+                android:text="@string/back_button" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/back_button"
+                android:layout_toLeftOf="@id/next_button"
+                android:layout_toRightOf="@id/back_button"
+                android:layout_toStartOf="@id/next_button"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/submit_button"
+                    style="@style/submit_button_landscape"
+                    android:text="@string/submit_button" />
+
+                <TextView
+                    android:id="@+id/answer_text"
+                    style="@style/answer_landscape" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_button"
+                style="@style/next_button_landscape"
+                android:text="@string/next_button" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

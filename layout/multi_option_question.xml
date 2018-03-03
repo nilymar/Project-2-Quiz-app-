@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topography">
+
+    <LinearLayout style="@style/linear_layout_top">
+
+        <TextView
+            android:id="@+id/multi_option_question_text"
+            style="@style/question_portrait" />
+
+        <TableLayout style="@style/table_layout">
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/multi_op1"
+                    style="@style/checkbox_left"
+                    android:textSize="@dimen/text_multi_portrait" />
+
+                <CheckBox
+                    android:id="@+id/multi_op2"
+                    style="@style/checkbox_right"
+                    android:textSize="@dimen/text_multi_portrait" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/multi_op3"
+                    style="@style/checkbox_left"
+                    android:textSize="@dimen/text_multi_portrait" />
+
+                <CheckBox
+                    android:id="@+id/multi_op4"
+                    style="@style/checkbox_right"
+                    android:textSize="@dimen/text_multi_portrait" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/multi_op5"
+                    style="@style/checkbox_left"
+                    android:textSize="@dimen/text_multi_portrait" />
+
+                <CheckBox
+                    android:id="@+id/multi_op6"
+                    style="@style/checkbox_right"
+                    android:textSize="@dimen/text_multi_portrait" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/multi_op7"
+                    style="@style/checkbox_left"
+                    android:textSize="@dimen/text_multi_portrait" />
+
+                <CheckBox
+                    android:id="@+id/multi_op8"
+                    style="@style/checkbox_right"
+                    android:textSize="@dimen/text_multi_portrait" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/multi_op9"
+                    style="@style/checkbox_left"
+                    android:textSize="@dimen/text_multi_portrait" />
+
+                <CheckBox
+                    android:id="@+id/multi_op10"
+                    style="@style/checkbox_right"
+                    android:textSize="@dimen/text_multi_portrait" />
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin">
+
+            <Button
+                android:id="@+id/submit_button_multi"
+                style="@style/submit_button_portrait"
+                android:text="@string/submit_button" />
+
+            <Button
+                android:id="@+id/back_button_multi"
+                style="@style/back_button_portrait"
+                android:text="back" />
+
+            <Button
+                android:id="@+id/next_button_multi"
+                style="@style/next_button_portrait"
+                android:text="@string/next_button" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/answer_text_multi"
+            style="@style/answer_portrait" />
+
+    </LinearLayout>
+</ScrollView>

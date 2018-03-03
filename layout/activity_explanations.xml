@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topography">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/explanations_text"
+            style="@style/explanation_screen_text" />
+
+        <Button
+            android:id="@+id/start_quiz"
+            style="@style/start_button_landscape"
+            android:text="@string/start_quiz_button" />
+
+    </LinearLayout>
+</ScrollView>

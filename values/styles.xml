@@ -1,0 +1,358 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2979FF</item>
+        <item name="colorPrimaryDark">#0D47A1</item>
+        <item name="colorAccent">#2196F3</item>
+        <item name="colorButtonNormal">#304FFE</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="start_button_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/skin1</item>
+        <item name="android:paddingBottom">@dimen/round_margin_landscape</item>
+        <item name="android:paddingLeft">@dimen/start_button_padding</item>
+        <item name="android:paddingRight">@dimen/start_button_padding</item>
+        <item name="android:paddingTop">@dimen/round_margin_landscape</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">@dimen/text_start_portrait</item>
+    </style>
+
+    <style name="start_button_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignBottom">@id/name_of_quiz</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/start_button_margin</item>
+        <item name="android:background">@drawable/skin1</item>
+        <item name="android:paddingBottom">@dimen/very_small_margin</item>
+        <item name="android:paddingLeft">@dimen/start_button_padding</item>
+        <item name="android:paddingRight">@dimen/start_button_padding</item>
+        <item name="android:paddingTop">@dimen/very_small_margin</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">@dimen/text_start_landscape</item>
+    </style>
+
+    <style name="explanation_screen_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/score_big_frame</item>
+        <item name="android:layout_marginLeft">@dimen/fab_margin</item>
+        <item name="android:layout_marginRight">@dimen/fab_margin</item>
+        <item name="android:layout_marginTop">@dimen/score_big_frame</item>
+        <item name="android:fontFamily">@font/skiplegday</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/standard_text_color</item>
+        <item name="android:textSize">@dimen/text_submit_portrait</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="question_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/fab_margin</item>
+        <item name="android:background">@drawable/rounded_corner_ques</item>
+        <item name="android:padding">@dimen/standard_margin</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/questionText</item>
+        <item name="android:textSize">@dimen/text_big_landscape</item>
+    </style>
+
+    <style name="linear_layout_top">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/standard_margin</item>
+        <item name="android:layout_marginRight">@dimen/standard_margin</item>
+        <item name="android:layoutDirection">ltr</item>
+        <item name="android:layout_marginBottom">@dimen/very_small_margin</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="checkbox_left">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+        <item name="android:layout_marginRight">@dimen/very_small_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/special_button</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:paddingTop">@dimen/small_margin</item>
+        <item name="android:paddingBottom">@dimen/small_margin</item>
+        <item name="android:paddingRight">@dimen/small_margin</item>
+        <item name="android:paddingLeft">@dimen/fab_margin</item>
+    </style>
+
+    <style name="checkbox_right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+        <item name="android:layout_marginLeft">@dimen/very_small_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/special_button</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:paddingTop">@dimen/small_margin</item>
+        <item name="android:paddingBottom">@dimen/small_margin</item>
+        <item name="android:paddingRight">@dimen/small_margin</item>
+        <item name="android:paddingLeft">@dimen/fab_margin</item>
+    </style>
+
+    <style name="table_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/very_small_margin</item>
+        <item name="android:paddingLeft">@dimen/very_small_margin</item>
+        <item name="android:paddingRight">@dimen/very_small_margin</item>
+        <item name="android:paddingTop">@dimen/small_margin</item>
+        <item name="android:stretchColumns">0,1</item>
+    </style>
+
+    <style name="submit_button_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/submit_round_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/standard_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_submit_portrait</item>
+    </style>
+
+    <style name="back_button_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginTop">@dimen/round_margin_portrait</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/standard_text_color</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+    </style>
+
+    <style name="next_button_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/round_margin_portrait</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/standard_text_color</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+    </style>
+
+    <style name="answer_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/fab_margin</item>
+        <item name="android:background">@drawable/rounded_corner_ans</item>
+        <item name="android:padding">@dimen/small_margin</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/text_answer_portrait</item>
+    </style>
+
+    <style name="question_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/fab_margin</item>
+        <item name="android:background">@drawable/rounded_corner_ques</item>
+        <item name="android:padding">@dimen/standard_margin</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/questionText</item>
+        <item name="android:textSize">@dimen/text_big_landscape</item>
+    </style>
+
+    <style name="back_button_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginTop">@dimen/round_margin_landscape</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/standard_text_color</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+    </style>
+
+    <style name="submit_button_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/submit_round_button_landscape</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/standard_text_color</item>
+        <item name="android:textSize">@dimen/text_submit_landscape</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="answer_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/rounded_corner_ans</item>
+        <item name="android:layout_marginLeft">@dimen/fab_margin</item>
+        <item name="android:layout_marginRight">@dimen/fab_margin</item>
+        <item name="android:padding">@dimen/standard_margin</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">@dimen/text_big_landscape</item>
+    </style>
+
+    <style name="next_button_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginTop">@dimen/round_margin_landscape</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/standard_text_color</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="radio_group_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:paddingBottom">@dimen/very_small_margin</item>
+        <item name="android:paddingTop">@dimen/very_small_margin</item>
+    </style>
+
+    <style name="radio_button_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/special_button</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:padding">@dimen/standard_margin</item>
+        <item name="android:textSize">@dimen/text_answer_portrait</item>
+    </style>
+
+    <style name="radio_group_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/very_small_margin</item>
+        <item name="android:paddingTop">@dimen/very_small_margin</item>
+    </style>
+
+    <style name="radio_button_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/very_small_margin</item>
+        <item name="android:layout_marginTop">@dimen/very_small_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/special_button</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:padding">@dimen/standard_margin</item>
+        <item name="android:textSize">@dimen/text_multi_landscape</item>
+    </style>
+
+    <style name="edit_text_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/standard_margin</item>
+        <item name="android:background">@drawable/rounded_corner_op</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:padding">@dimen/standard_margin</item>
+        <item name="android:textSize">@dimen/text_answer_portrait</item>
+    </style>
+
+    <style name="edit_text_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_corner_op</item>
+        <item name="android:layout_marginTop">@dimen/fab_margin</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:padding">@dimen/round_margin_landscape</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/text_big_landscape</item>
+    </style>
+
+    <style name="score_text_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/fab_margin</item>
+        <item name="android:textColor">@color/scoreText</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="exit_button_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/score_big_frame</item>
+        <item name="android:layout_marginBottom">@dimen/exit_button_margin</item>
+        <item name="android:paddingTop">@dimen/round_margin_landscape</item>
+        <item name="android:paddingBottom">@dimen/round_margin_landscape</item>
+        <item name="android:paddingLeft">@dimen/ring_thickness</item>
+        <item name="android:paddingRight">@dimen/ring_thickness</item>
+        <item name="android:background">@drawable/skin1</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="start_over_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/skin</item>
+        <item name="android:paddingTop">@dimen/round_margin_landscape</item>
+        <item name="android:paddingBottom">@dimen/round_margin_landscape</item>
+        <item name="android:paddingLeft">@dimen/ring_thickness</item>
+        <item name="android:paddingRight">@dimen/ring_thickness</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="score_text_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/standard_margin</item>
+        <item name="android:textColor">@color/scoreText</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="exit_button_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/round_margin_landscape</item>
+        <item name="android:paddingBottom">@dimen/round_margin_landscape</item>
+        <item name="android:paddingLeft">@dimen/ring_thickness</item>
+        <item name="android:paddingRight">@dimen/ring_thickness</item>
+        <item name="android:background">@drawable/skin1</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="start_over_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/skin</item>
+        <item name="android:paddingTop">@dimen/round_margin_landscape</item>
+        <item name="android:paddingBottom">@dimen/round_margin_landscape</item>
+        <item name="android:paddingLeft">@dimen/ring_thickness</item>
+        <item name="android:paddingRight">@dimen/ring_thickness</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_round_button</item>
+        <item name="android:textColor">@color/colorBackground</item>
+    </style>
+</resources>
